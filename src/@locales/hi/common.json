@@ -1,0 +1,166 @@
+{
+    "base": {
+      "provider": "प्रदाता",
+      "from": "से",
+      "login": "लॉगिन",
+      "register": "पंजीकरण",
+      "change": "बदलें",
+      "changePassword": "पासवर्ड बदलें",
+      "deposit": "जमा करें",
+      "amount": "राशि",
+      "yourAmount": "आपकी राशि",
+      "proceedThePayment": "भुगतान करें",
+      "GB": "GB",
+      "prolong": "विस्तारित करें",
+      "generate": "उत्पन्न करें",
+      "payForGoods": "वस्तुओं के लिए भुगतान करें",
+      "copy": "प्रतिलिपि",
+      "copied": "प्रतिलिपि बनाई गई",
+      "total": "कुल",
+      "balance": "शेष राशि"
+    },
+    "menu": {
+      "title": "मेनू",
+      "accounts": "खाते",
+      "proxy": "प्रॉक्सी"
+    },
+    "profileMenu": {
+      "profile": "प्रोफ़ाइल",
+      "myPurchases": "मेरी खरीदारी",
+      "referral": "संदर्भ",
+      "logout": "लॉगआउट"
+    },
+    "loginPage": {
+      "fields": {
+        "usernameOrEmail": "उपयोगकर्ता नाम या ईमेल",
+        "password": "पासवर्ड"
+      },
+      "errors": {
+        "username": "उपयोगकर्ता नाम या ईमेल आवश्यक है",
+        "password": "पासवर्ड आवश्यक है"
+      },
+      "helperText": "क्या आपका खाता नहीं है?"
+    },
+    "registerPage": {
+      "fields": {
+        "username": "उपयोगकर्ता नाम",
+        "email": "ईमेल",
+        "password": "पासवर्ड",
+        "refCode": "संदर्भ कोड (वैकल्पिक)"
+      },
+      "errors": {
+        "usernameMinLength": "उपयोगकर्ता नाम कम से कम 4 अक्षरों का होना चाहिए",
+        "usernameRequired": "उपयोगकर्ता नाम आवश्यक है",
+        "emailInvalid": "अमान्य ईमेल पता",
+        "emailRequired": "ईमेल आवश्यक है",
+        "passwordMinLength": "पासवर्ड कम से कम 8 अक्षरों का होना चाहिए",
+        "passwordRequired": "पासवर्ड आवश्यक है"
+      },
+      "helperText": "क्या पहले से खाता है?"
+    },
+    "proxyPage": {
+      "title": "प्रॉक्सी",
+      "chooseProvider": "प्रदाता चुनें",
+      "forPayment": "भुगतान के लिए",
+      "placeOrder": "आदेश दें"
+    },
+    "profilePage": {
+      "title": "प्रोफ़ाइल",
+      "personalInfo": "व्यक्तिगत जानकारी",
+      "depositNow": "अभी जमा करें"
+    },
+    "temporaryUserAlert": {
+      "title": "अपनी प्रोफ़ाइल डेटा अपडेट करें",
+      "description": "आपके पास इस समय एक अस्थायी खाता है। पहुंच बनाए रखने के लिए अपना डेटा अपडेट करें, अन्यथा आप अपना खाता खो सकते हैं।"
+    },
+    "changePasswordModal": {
+      "currentPassword": "वर्तमान पासवर्ड",
+      "newPassword": "नया पासवर्ड",
+      "confirmNewPassword": "नया पासवर्ड पुष्टि करें"
+    },
+    "depositHistory": {
+      "order": "आदेश",
+      "date": "तारीख",
+      "paymentMethod": "भुगतान विधि",
+      "status": "स्थिति"
+    },
+    "myPurchasesPage": {
+      "title": "मेरी खरीदारी",
+      "proxyFilters": {
+        "showActiveOrders": "सक्रिय आदेश दिखाएं",
+        "proxyType": "प्रॉक्सी प्रकार",
+        "allProxyTypes": "सभी प्रॉक्सी प्रकार",
+        "residentialProxy": "आवासीय प्रॉक्सी",
+        "ispProxy": "आईएसपी"
+      }
+    },
+    "proxyPurchasesItem": {
+      "proxyType": "प्रॉक्सी प्रकार",
+      "trafficLeft": "शेष ट्रैफ़िक",
+      "validUntil": "मान्य समय सीमा",
+      "statuses": {
+        "active": "सक्रिय",
+        "ended": "समाप्त"
+      }
+    },
+    "trafficProgress": {
+      "trafficUsed": "उपयोग किया गया ट्रैफ़िक"
+    },
+    "generateProxyPage": {
+      "title": "प्रॉक्सी उत्पन्न करें",
+      "availableOrders": {
+        "title": "उपलब्ध आदेश",
+        "tooltip": "आपके आदेश"
+      },
+      "protocol": {
+        "title": "प्रोटोकॉल",
+        "tooltip": "क्लाइंट डिवाइस और प्रॉक्सी सर्वर के बीच उपयोग किया जाने वाला विशिष्ट संचार प्रोटोकॉल, जिसमें एंडपॉइंट:पोर्ट, HTTP(S), और SOCKS5 शामिल हैं"
+      },
+      "format": {
+        "title": "स्वरूप",
+        "tooltip": "जिस स्वरूप में प्रॉक्सी निर्यात किए जाते हैं"
+      },
+      "location": {
+        "title": "स्थान",
+        "tooltip": "यादृच्छिक IP स्थान चुनें या सटीक रूप से किसी देश, राज्य और शहर को लक्षित करें",
+        "options": {
+          "random": "यादृच्छिक",
+          "country": "देश"
+        },
+        "state": "राज्य",
+        "city": "शहर"
+      },
+      "sessionType": {
+        "title": "सत्र प्रकार",
+        "tooltip": "क्लाइंट (वेब ब्राउज़र, ऐप आदि) और प्रॉक्सी सर्वर के बीच स्थापित सत्र का प्रकार, जिसमें स्टिकी IP और रोटेटिंग IP शामिल हैं। स्टिकी: स्टिकी सत्र के साथ एक ही IP पता 1440 मिनट तक रखें। रोटेटिंग: प्रत्येक अनुरोध के साथ नया IP प्राप्त करने के लिए रोटेटिंग सत्र चुनें।",
+        "options": {
+          "dynamic": "गतिशील",
+          "static": "स्थिर"
+        }
+      },
+      "ttl": {
+        "title": "टीटीएल",
+        "tooltip": "प्रॉक्सी का जीवनकाल"
+      },
+      "count": {
+        "title": "संख्या",
+        "tooltip": "एक बार में उत्पन्न किए गए प्रॉक्सी की संख्या"
+      },
+      "showMoreOptions": "अधिक विकल्प दिखाएं",
+      "hideMoreOptions": "अधिक विकल्प छिपाएं",
+      "saveAndClose": "सहेजें और बंद करें",
+      "proxyGenerated": "प्रॉक्सी उत्पन्न किया गया"
+    },
+    "referralPage": {
+      "title": "संदर्भ कार्यक्रम",
+      "totalReferrals": "कुल संदर्भ",
+      "totalMoneyFromReferrals": "संदर्भ से कुल धन",
+      "totalMoneyOnHold": "कुल लंबित धनराशि",
+      "canBeWithdrawn": "निकाला जा सकता है",
+      "yourReferralLink": "आपका संदर्भ लिंक",
+      "changeReferralCode": "संदर्भ कोड बदलें",
+      "transferToBalance": "शेष राशि में स्थानांतरित करें",
+      "withdrawMoney": "धन निकालें"
+    }
+  }
+  

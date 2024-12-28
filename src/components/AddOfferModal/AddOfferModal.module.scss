@@ -1,0 +1,153 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+  background-color: $gray-600;
+  border-radius: 16px;
+  max-width: 1000px;
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-height: 90vh;
+  }
+
+  &__main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    gap: 16px;
+    height: 100%;
+    overflow-y: auto;
+    @include DisableScrollbar;
+
+    @include Tablet {
+      grid-template-columns: 1fr;
+    }
+
+    &__info {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      &__upload {
+        padding: 24px;
+        background-color: rgba($foreground, 0.05);
+        border-radius: 8px;
+
+        &__main {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          &__image {
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 8px;
+          }
+
+          &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            span {
+              color: $primary;
+              cursor: pointer;
+              text-decoration: underline;
+            }
+          }
+        }
+
+        &__wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 16px;
+        }
+      }
+
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      &__prices {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      &__tags {
+        &__wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+        }
+
+        &__head {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          p {
+            color: $blue-gray;
+          }
+        }
+
+        &__main {
+          padding: 16px 56px 16px 16px;
+          border-radius: 8px;
+          background-color: rgba($foreground, 0.05);
+          min-height: 160px;
+          max-height: 280px;
+          overflow-y: auto;
+          position: relative;
+
+          &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px;
+          }
+
+          @include DisableScrollbar;
+        }
+
+        &__button {
+          position: absolute;
+          top: 16px;
+          height: 16px;
+        }
+      }
+    }
+
+    &__preview {
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+
+  &__actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+}

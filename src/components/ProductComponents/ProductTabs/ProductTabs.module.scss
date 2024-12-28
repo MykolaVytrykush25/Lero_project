@@ -1,0 +1,30 @@
+@import "@/scss/variables.scss";
+
+.tab {
+  &__overview {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__description {
+      font-weight: 600;
+      line-height: 24px;
+      color: $blue-gray;
+    }
+  }
+
+  &__review {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__comments {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}

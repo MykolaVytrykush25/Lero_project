@@ -1,0 +1,14 @@
+@import "@/scss/variables.scss";
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  span {
+    font-size: 16px;
+    font-weight: 600;
+    color: $white;
+    line-height: 24px;
+  }
+}

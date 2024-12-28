@@ -1,0 +1,166 @@
+{
+    "base": {
+      "provider": "プロバイダー",
+      "from": "から",
+      "login": "ログイン",
+      "register": "登録",
+      "change": "変更",
+      "changePassword": "パスワードを変更",
+      "deposit": "入金",
+      "amount": "金額",
+      "yourAmount": "あなたの金額",
+      "proceedThePayment": "支払いを進める",
+      "GB": "GB",
+      "prolong": "延長",
+      "generate": "生成",
+      "payForGoods": "商品を支払う",
+      "copy": "コピー",
+      "copied": "コピーされました",
+      "total": "合計",
+      "balance": "残高"
+    },
+    "menu": {
+      "title": "メニュー",
+      "accounts": "アカウント",
+      "proxy": "プロキシ"
+    },
+    "profileMenu": {
+      "profile": "プロフィール",
+      "myPurchases": "私の購入",
+      "referral": "紹介",
+      "logout": "ログアウト"
+    },
+    "loginPage": {
+      "fields": {
+        "usernameOrEmail": "ユーザー名またはメール",
+        "password": "パスワード"
+      },
+      "errors": {
+        "username": "ユーザー名またはメールは必須です",
+        "password": "パスワードは必須です"
+      },
+      "helperText": "アカウントをお持ちでないですか？"
+    },
+    "registerPage": {
+      "fields": {
+        "username": "ユーザー名",
+        "email": "メール",
+        "password": "パスワード",
+        "refCode": "紹介コード（任意）"
+      },
+      "errors": {
+        "usernameMinLength": "ユーザー名は4文字以上でなければなりません",
+        "usernameRequired": "ユーザー名は必須です",
+        "emailInvalid": "無効なメールアドレスです",
+        "emailRequired": "メールは必須です",
+        "passwordMinLength": "パスワードは8文字以上でなければなりません",
+        "passwordRequired": "パスワードは必須です"
+      },
+      "helperText": "すでにアカウントをお持ちですか？"
+    },
+    "proxyPage": {
+      "title": "プロキシ",
+      "chooseProvider": "プロバイダーを選択",
+      "forPayment": "支払い用",
+      "placeOrder": "注文する"
+    },
+    "profilePage": {
+      "title": "プロフィール",
+      "personalInfo": "個人情報",
+      "depositNow": "今すぐ入金"
+    },
+    "temporaryUserAlert": {
+      "title": "プロフィールデータを更新してください",
+      "description": "現在、仮アカウントを使用しています。データを更新しないとアカウントにアクセスできなくなる可能性がありますのでご注意ください。"
+    },
+    "changePasswordModal": {
+      "currentPassword": "現在のパスワード",
+      "newPassword": "新しいパスワード",
+      "confirmNewPassword": "新しいパスワードを確認"
+    },
+    "depositHistory": {
+      "order": "注文",
+      "date": "日付",
+      "paymentMethod": "支払い方法",
+      "status": "ステータス"
+    },
+    "myPurchasesPage": {
+      "title": "私の購入",
+      "proxyFilters": {
+        "showActiveOrders": "有効な注文を表示",
+        "proxyType": "プロキシタイプ",
+        "allProxyTypes": "すべてのプロキシタイプ",
+        "residentialProxy": "住宅プロキシ",
+        "ispProxy": "ISP"
+      }
+    },
+    "proxyPurchasesItem": {
+      "proxyType": "プロキシタイプ",
+      "trafficLeft": "残りトラフィック",
+      "validUntil": "有効期限",
+      "statuses": {
+        "active": "アクティブ",
+        "ended": "終了"
+      }
+    },
+    "trafficProgress": {
+      "trafficUsed": "使用済みトラフィック"
+    },
+    "generateProxyPage": {
+      "title": "プロキシを生成",
+      "availableOrders": {
+        "title": "利用可能な注文",
+        "tooltip": "あなたの注文"
+      },
+      "protocol": {
+        "title": "プロトコル",
+        "tooltip": "クライアントデバイスとプロキシサーバー間で使用される特定の通信プロトコル（エンドポイント:ポート、HTTP(S)、SOCKS5を含む）"
+      },
+      "format": {
+        "title": "フォーマット",
+        "tooltip": "プロキシがエクスポートされる形式"
+      },
+      "location": {
+        "title": "場所",
+        "tooltip": "ランダムなIPロケーションを選択するか、国、州、市を正確にターゲティング",
+        "options": {
+          "random": "ランダム",
+          "country": "国"
+        },
+        "state": "州",
+        "city": "市"
+      },
+      "sessionType": {
+        "title": "セッションタイプ",
+        "tooltip": "クライアント（ウェブブラウザ、アプリなど）とプロキシサーバー間で確立されるセッションのタイプ（スティッキーIPとローテーションIPを含む）。スティッキー：スティッキーセッションを使用して最大1440分間同じIPアドレスを保持。ローテーション：リクエストごとに新しいIPを取得するローテーションセッションを選択。",
+        "options": {
+          "dynamic": "ダイナミック",
+          "static": "スタティック"
+        }
+      },
+      "ttl": {
+        "title": "TTL",
+        "tooltip": "プロキシの存続時間"
+      },
+      "count": {
+        "title": "カウント",
+        "tooltip": "一度に生成されるプロキシの数"
+      },
+      "showMoreOptions": "詳細オプションを表示",
+      "hideMoreOptions": "詳細オプションを隠す",
+      "saveAndClose": "保存して閉じる",
+      "proxyGenerated": "プロキシが生成されました"
+    },
+    "referralPage": {
+      "title": "紹介プログラム",
+      "totalReferrals": "総紹介数",
+      "totalMoneyFromReferrals": "紹介からの総収入",
+      "totalMoneyOnHold": "保留中の総収入",
+      "canBeWithdrawn": "引き出し可能",
+      "yourReferralLink": "あなたの紹介リンク",
+      "changeReferralCode": "紹介コードを変更",
+      "transferToBalance": "残高に振り替え",
+      "withdrawMoney": "お金を引き出す"
+    }
+  }
+  

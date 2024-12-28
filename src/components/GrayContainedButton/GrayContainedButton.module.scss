@@ -1,0 +1,79 @@
+@import "@/scss/variables.scss";
+
+.button {
+  background-color: $dark-gray-400 !important;
+  min-width: max-content !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &:disabled {
+    background-color: $dark-gray-300 !important;
+    color: $dark-gray-200 !important;
+
+    svg path {
+      fill: $dark-gray-200 !important;
+    }
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
+
+    path {
+      transition: all 0.25s ease-in-out;
+    }
+  }
+
+  &__bluegray {
+    color: $blue-gray !important;
+
+    svg path {
+      fill: $blue-gray;
+    }
+
+    &:hover {
+      color: $white !important;
+
+      svg path {
+        fill: $white;
+      }
+    }
+  }
+
+  &__white {
+    color: $white !important;
+
+    svg path {
+      fill: $white;
+    }
+
+    &:hover {
+      color: $primary !important;
+
+      svg path {
+        fill: $primary;
+      }
+    }
+  }
+
+  &__primary {
+    color: $primary !important;
+
+    svg path {
+      fill: $primary;
+    }
+
+    &:hover {
+      color: rgba($primary, 0.65) !important;
+
+      svg path {
+        fill: rgba($primary, 0.65);
+      }
+    }
+  }
+
+  &__rounded {
+    border-radius: 999px;
+  }
+}

@@ -1,0 +1,11 @@
+@import "@/scss/variables.scss";
+
+.price {
+  display: block;
+  background-color: $dark-gray-800;
+  padding: 6px 10px;
+  border-radius: 8px;
+  color: $primary;
+  font-weight: 500;
+  text-shadow: 0px 6.65px 5.32px rgba($primary, 0.1), 0px 2.767px 2.214px rgba($primary, 0.07);
+}

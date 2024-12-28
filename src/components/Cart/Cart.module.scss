@@ -1,0 +1,78 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.cart {
+  overflow-y: hidden;
+  height: 100vh;
+  width: 480px;
+
+  @include Mobile {
+    width: 100vw;
+  }
+
+  &__wrapper {
+    background-color: $gray-600;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    @include Mobile {
+      padding: 16px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+    span {
+      color: $blue-gray;
+    }
+  }
+
+  &__items {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include CustomScroll;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border-top: 1px solid rgba($white, 0.15);
+    padding-top: 16px;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+      p,
+      span {
+        font-weight: 600;
+        line-height: 24px;
+      }
+
+      span {
+        font-size: 24px;
+        color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.rate {
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+
+    @include SmallTablet {
+      flex-direction: column;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__count {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    p {
+      color: $blue-gray;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import "@/scss/variables.scss";
+
+.privacy {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__forgot {
+    color: $primary;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: all $transition250;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

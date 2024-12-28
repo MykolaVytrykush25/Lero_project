@@ -1,0 +1,36 @@
+@import "@/scss/variables.scss";
+
+.button {
+  height: 48px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 16px;
+  color: $blue-gray;
+  transition: all 0.25s ease-in-out;
+  background-color: rgba($dark-gray-400, 0.05);
+
+  &:hover:not(&__active) {
+    color: $white;
+  }
+
+  svg {
+    margin-right: 6px;
+  }
+
+  &__active {
+    background-color: rgba($primary, 0.1);
+    color: $primary;
+
+    span {
+      color: rgba($primary, 0.3) !important;
+    }
+  }
+
+  span {
+    color: $blue-gray;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}

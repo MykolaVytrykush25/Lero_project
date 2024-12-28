@@ -1,0 +1,166 @@
+{
+    "base": {
+      "provider": "提供商",
+      "from": "来自",
+      "login": "登录",
+      "register": "注册",
+      "change": "更改",
+      "changePassword": "更改密码",
+      "deposit": "充值",
+      "amount": "金额",
+      "yourAmount": "你的金额",
+      "proceedThePayment": "进行支付",
+      "GB": "GB",
+      "prolong": "延长",
+      "generate": "生成",
+      "payForGoods": "支付商品",
+      "copy": "复制",
+      "copied": "已复制",
+      "total": "总计",
+      "balance": "余额"
+    },
+    "menu": {
+      "title": "菜单",
+      "accounts": "账户",
+      "proxy": "代理"
+    },
+    "profileMenu": {
+      "profile": "个人资料",
+      "myPurchases": "我的购买",
+      "referral": "推荐",
+      "logout": "登出"
+    },
+    "loginPage": {
+      "fields": {
+        "usernameOrEmail": "用户名或邮箱",
+        "password": "密码"
+      },
+      "errors": {
+        "username": "用户名或邮箱是必填项",
+        "password": "密码是必填项"
+      },
+      "helperText": "还没有账户？"
+    },
+    "registerPage": {
+      "fields": {
+        "username": "用户名",
+        "email": "邮箱",
+        "password": "密码",
+        "refCode": "推荐码（可选）"
+      },
+      "errors": {
+        "usernameMinLength": "用户名至少需要4个字符",
+        "usernameRequired": "用户名是必填项",
+        "emailInvalid": "无效的邮箱地址",
+        "emailRequired": "邮箱是必填项",
+        "passwordMinLength": "密码至少需要8个字符",
+        "passwordRequired": "密码是必填项"
+      },
+      "helperText": "已有账户？"
+    },
+    "proxyPage": {
+      "title": "代理",
+      "chooseProvider": "选择提供商",
+      "forPayment": "用于支付",
+      "placeOrder": "下单"
+    },
+    "profilePage": {
+      "title": "个人资料",
+      "personalInfo": "个人信息",
+      "depositNow": "立即充值"
+    },
+    "temporaryUserAlert": {
+      "title": "更新您的个人资料数据",
+      "description": "您当前使用的是临时账户。更新您的数据以保持访问权限，否则您可能会失去账户。"
+    },
+    "changePasswordModal": {
+      "currentPassword": "当前密码",
+      "newPassword": "新密码",
+      "confirmNewPassword": "确认新密码"
+    },
+    "depositHistory": {
+      "order": "订单",
+      "date": "日期",
+      "paymentMethod": "支付方式",
+      "status": "状态"
+    },
+    "myPurchasesPage": {
+      "title": "我的购买",
+      "proxyFilters": {
+        "showActiveOrders": "显示有效订单",
+        "proxyType": "代理类型",
+        "allProxyTypes": "所有代理类型",
+        "residentialProxy": "住宅代理",
+        "ispProxy": "ISP代理"
+      }
+    },
+    "proxyPurchasesItem": {
+      "proxyType": "代理类型",
+      "trafficLeft": "剩余流量",
+      "validUntil": "有效期至",
+      "statuses": {
+        "active": "有效",
+        "ended": "已结束"
+      }
+    },
+    "trafficProgress": {
+      "trafficUsed": "已用流量"
+    },
+    "generateProxyPage": {
+      "title": "生成代理",
+      "availableOrders": {
+        "title": "可用订单",
+        "tooltip": "您的订单"
+      },
+      "protocol": {
+        "title": "协议",
+        "tooltip": "客户端设备与代理服务器之间使用的特定通信协议，包括端点:端口、HTTP(S) 和 SOCKS5"
+      },
+      "format": {
+        "title": "格式",
+        "tooltip": "导出代理的格式"
+      },
+      "location": {
+        "title": "位置",
+        "tooltip": "选择随机 IP 位置或精确定位到国家、省份和城市",
+        "options": {
+          "random": "随机",
+          "country": "国家"
+        },
+        "state": "省份",
+        "city": "城市"
+      },
+      "sessionType": {
+        "title": "会话类型",
+        "tooltip": "客户端（如浏览器、应用等）与代理服务器之间建立的会话类型，包括固定 IP 和轮换 IP。固定：使用固定会话，最多保持1440分钟相同 IP 地址。轮换：选择轮换会话，每次请求都获取新 IP 地址。",
+        "options": {
+          "dynamic": "动态",
+          "static": "静态"
+        }
+      },
+      "ttl": {
+        "title": "TTL",
+        "tooltip": "代理的存活时间"
+      },
+      "count": {
+        "title": "数量",
+        "tooltip": "一次生成的代理数量"
+      },
+      "showMoreOptions": "显示更多选项",
+      "hideMoreOptions": "隐藏更多选项",
+      "saveAndClose": "保存并关闭",
+      "proxyGenerated": "代理已生成"
+    },
+    "referralPage": {
+      "title": "推荐计划",
+      "totalReferrals": "总推荐人数",
+      "totalMoneyFromReferrals": "推荐总收益",
+      "totalMoneyOnHold": "总待处理金额",
+      "canBeWithdrawn": "可提现金额",
+      "yourReferralLink": "您的推荐链接",
+      "changeReferralCode": "更改推荐码",
+      "transferToBalance": "转入余额",
+      "withdrawMoney": "提现"
+    }
+  }
+  

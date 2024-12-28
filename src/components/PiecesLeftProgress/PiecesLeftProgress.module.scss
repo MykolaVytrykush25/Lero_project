@@ -1,0 +1,16 @@
+@import "@/scss/variables.scss";
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  p {
+    color: $blue-gray;
+
+    span {
+      color: $white;
+      font-weight: 600;
+    }
+  }
+}

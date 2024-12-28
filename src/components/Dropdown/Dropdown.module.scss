@@ -1,0 +1,167 @@
+@import "@/scss/variables.scss";
+
+.dropdown {
+  width: 100%;
+
+  &__hidden {
+    .dropdown {
+      &__head {
+        &__left {
+          &__title {
+            display: none;
+          }
+        }
+        &__arrow {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__active {
+    .dropdown__head {
+      background-color: $dark-gray-700;
+
+      &__left {
+        &__title {
+          color: $primary;
+        }
+      }
+
+      svg path {
+        fill: $primary;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  a,
+  p {
+    font-size: 16px;
+  }
+
+  &__head {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 8px;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      .dropdown__head {
+        &__left {
+          &__title {
+            color: $primary;
+          }
+
+          &__icon {
+            svg path {
+              fill: $primary;
+            }
+          }
+        }
+      }
+    }
+
+    &__left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &__title {
+        color: $blue-gray;
+        transition: all 0.3s ease-in-out;
+        line-height: 24px;
+      }
+
+      &__icon {
+        width: 24px;
+        height: 24px;
+        transition: all 0.3s ease-in-out;
+
+        svg {
+          width: 100%;
+          height: 100%;
+
+          path {
+            fill: $blue-gray;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+
+    &__arrow {
+      width: 24px;
+      height: 24px;
+
+      &__icon {
+        transform: rotate(0deg);
+        transition: all 0.3s ease-in-out !important;
+
+        path {
+          transition: all 0.3s ease-in-out;
+          fill: $blue-gray;
+        }
+
+        &__opened {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    list-style-type: none;
+    padding: 0;
+    padding-left: 12px;
+    margin: 0;
+
+    &__opened {
+      max-height: 360px;
+    }
+
+    &__item {
+      width: 100%;
+      color: $blue-gray;
+      padding: 8px;
+
+      &__active {
+        a {
+          color: $primary;
+        }
+      }
+
+      a {
+        width: 100%;
+        display: block;
+        transition: all 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &:hover {
+          color: $primary;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+@import "@/scss/variables.scss";
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: $gray-900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__payment {
+    margin: 24px;
+    padding: 24px;
+    border-radius: 8px;
+    max-width: 852px;
+    width: 100%;
+    background-color: $dark-gray-400;
+
+    p {
+      font-weight: 600;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    &__head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+
+      &__logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        svg {
+          &:first-child {
+            width: 54px;
+            height: 28px;
+          }
+
+          &:last-child {
+            width: 108px;
+            height: 40px;
+          }
+        }
+      }
+    }
+
+    &__block {
+      padding: 24px;
+      border-radius: 8px;
+      background-color: $dark-gray-400;
+    }
+
+    &__expiration {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      &__progress {
+        position: relative;
+      }
+
+      &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &__timer {
+          color: $primary;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 32px;
+        }
+      }
+    }
+
+    &__success {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      &__img {
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+        background-color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+
+    &__fields {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+
+      &__qr {
+        border-radius: 8px;
+        background-color: $white;
+        padding: 12px;
+      }
+
+      &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+
+        &__item {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+
+          span {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

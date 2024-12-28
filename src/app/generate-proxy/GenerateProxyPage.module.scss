@@ -1,0 +1,223 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__head {
+      display: grid;
+      grid-template-columns: 6fr 3fr;
+      align-items: flex-start;
+      gap: 16px;
+
+      @include SmallTablet {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 16px;
+      }
+    }
+
+    &__generate {
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      &__providers {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &__proxy {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          &__list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+
+            // &__item {
+            //   span {
+            //     font-size: 12px;
+            //     font-weight: 600;
+            //     color: $blue-gray;
+            //   }
+            // }
+          }
+        }
+
+        &__protocol {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+
+          @include Laptop {
+            display: flex;
+            flex-direction: column;
+          }
+
+          &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            &__list {
+              display: flex;
+              align-items: center;
+              gap: 16px;
+            }
+          }
+        }
+      }
+
+      &__actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        @include Mobile {
+          flex-direction: column;
+        }
+      }
+    }
+
+    &__traffic {
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+      }
+    }
+
+    &__info {
+      display: flex;
+      padding: 24px !important;
+
+      &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      &__location,
+      &__session {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        &__list {
+          display: grid;
+          align-items: flex-end;
+          grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+          gap: 16px;
+        }
+      }
+
+      &__session {
+        &__list {
+          &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+          }
+        }
+      }
+    }
+
+    &__proxies {
+      border-radius: 10px;
+      background-color: $gray-600;
+
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__head {
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+        border-bottom: 1px solid $blue-gray;
+      }
+
+      &__list {
+        padding: 16px 0 16px 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+
+        &__wrapper {
+          overflow: auto;
+
+          &::-webkit-scrollbar {
+            width: 32px;
+            height: 32px;
+            border-radius: 999px;
+          }
+
+          &::-webkit-scrollbar-thumb {
+            width: 8px;
+            border: 12px solid $gray-600;
+            background-color: $dark-gray-300;
+            height: 56px;
+            border-radius: 999px;
+            transition: background-color 0.25s ease-in-out;
+          }
+
+          &::-webkit-scrollbar-thumb:hover {
+            background-color: $dark-gray-200;
+          }
+
+          &::-webkit-scrollbar-corner {
+            background-color: $gray-600;
+          }
+        }
+
+        &__row {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          width: 100%;
+
+          &__index {
+            line-height: 24px;
+            user-select: none;
+            color: $dark-gray-200;
+            min-width: 38px;
+            text-align: right;
+            font-size: 14px;
+          }
+
+          &__text {
+            line-height: 24px;
+            font-size: 14px;
+            white-space: nowrap;
+            color: $blue-gray;
+          }
+        }
+      }
+    }
+  }
+}

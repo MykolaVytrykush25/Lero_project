@@ -1,0 +1,25 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.banner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4.14;
+  border-radius: 8px;
+  padding: 24px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include Mobile {
+    aspect-ratio: 2.5;
+  }
+
+  &__button {
+    background-color: rgba($gray-700, 0.75) !important;
+    backdrop-filter: blur(40px) !important;
+    position: absolute !important;
+    top: 24px !important;
+    right: 24px !important;
+  }
+}

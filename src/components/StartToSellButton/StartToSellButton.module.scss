@@ -1,0 +1,25 @@
+@import "@/scss/variables.scss";
+
+.sell {
+  padding: 8px 16px;
+  border-radius: 999px;
+  transition: all $transition250;
+  background-color: $gray-600;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 16px;
+  color: $white;
+
+  svg {
+    path {
+      fill: $primary;
+    }
+  }
+
+  &:hover {
+    color: $primary;
+  }
+}

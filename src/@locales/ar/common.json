@@ -1,0 +1,166 @@
+{
+    "base": {
+      "provider": "المزود",
+      "from": "من",
+      "login": "تسجيل الدخول",
+      "register": "التسجيل",
+      "change": "تغيير",
+      "changePassword": "تغيير كلمة المرور",
+      "deposit": "إيداع",
+      "amount": "المبلغ",
+      "yourAmount": "مبلغك",
+      "proceedThePayment": "تابع الدفع",
+      "GB": "GB",
+      "prolong": "تمديد",
+      "generate": "إنشاء",
+      "payForGoods": "الدفع مقابل السلع",
+      "copy": "نسخ",
+      "copied": "تم النسخ",
+      "total": "المجموع",
+      "balance": "الرصيد"
+    },
+    "menu": {
+      "title": "القائمة",
+      "accounts": "الحسابات",
+      "proxy": "بروكسي"
+    },
+    "profileMenu": {
+      "profile": "الملف الشخصي",
+      "myPurchases": "مشترياتي",
+      "referral": "الإحالة",
+      "logout": "تسجيل الخروج"
+    },
+    "loginPage": {
+      "fields": {
+        "usernameOrEmail": "اسم المستخدم أو البريد الإلكتروني",
+        "password": "كلمة المرور"
+      },
+      "errors": {
+        "username": "اسم المستخدم أو البريد الإلكتروني مطلوب",
+        "password": "كلمة المرور مطلوبة"
+      },
+      "helperText": "ليس لديك حساب؟"
+    },
+    "registerPage": {
+      "fields": {
+        "username": "اسم المستخدم",
+        "email": "البريد الإلكتروني",
+        "password": "كلمة المرور",
+        "refCode": "رمز الإحالة (اختياري)"
+      },
+      "errors": {
+        "usernameMinLength": "يجب أن يكون اسم المستخدم مكونًا من 4 أحرف على الأقل",
+        "usernameRequired": "اسم المستخدم مطلوب",
+        "emailInvalid": "عنوان البريد الإلكتروني غير صالح",
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "passwordMinLength": "يجب أن تكون كلمة المرور مكونة من 8 أحرف على الأقل",
+        "passwordRequired": "كلمة المرور مطلوبة"
+      },
+      "helperText": "هل لديك حساب بالفعل؟"
+    },
+    "proxyPage": {
+      "title": "بروكسي",
+      "chooseProvider": "اختر المزود",
+      "forPayment": "للدفع",
+      "placeOrder": "قدم الطلب"
+    },
+    "profilePage": {
+      "title": "الملف الشخصي",
+      "personalInfo": "المعلومات الشخصية",
+      "depositNow": "قم بالإيداع الآن"
+    },
+    "temporaryUserAlert": {
+      "title": "قم بتحديث بيانات ملفك الشخصي",
+      "description": "لديك حساب مؤقت في الوقت الحالي. قم بتحديث بياناتك للحفاظ على الوصول، وإلا قد تفقد حسابك."
+    },
+    "changePasswordModal": {
+      "currentPassword": "كلمة المرور الحالية",
+      "newPassword": "كلمة المرور الجديدة",
+      "confirmNewPassword": "تأكيد كلمة المرور الجديدة"
+    },
+    "depositHistory": {
+      "order": "الطلب",
+      "date": "التاريخ",
+      "paymentMethod": "طريقة الدفع",
+      "status": "الحالة"
+    },
+    "myPurchasesPage": {
+      "title": "مشترياتي",
+      "proxyFilters": {
+        "showActiveOrders": "عرض الطلبات النشطة",
+        "proxyType": "نوع البروكسي",
+        "allProxyTypes": "جميع أنواع البروكسي",
+        "residentialProxy": "بروكسي سكني",
+        "ispProxy": "ISP"
+      }
+    },
+    "proxyPurchasesItem": {
+      "proxyType": "نوع البروكسي",
+      "trafficLeft": "المرور المتبقي",
+      "validUntil": "صالح حتى",
+      "statuses": {
+        "active": "نشط",
+        "ended": "منتهٍ"
+      }
+    },
+    "trafficProgress": {
+      "trafficUsed": "المرور المستخدم"
+    },
+    "generateProxyPage": {
+      "title": "إنشاء بروكسي",
+      "availableOrders": {
+        "title": "الطلبات المتاحة",
+        "tooltip": "طلباتك"
+      },
+      "protocol": {
+        "title": "البروتوكول",
+        "tooltip": "بروتوكول الاتصال المحدد المستخدم بين جهاز العميل وخادم البروكسي، بما في ذلك Endpoint:Port، HTTP(S)، و SOCKS5"
+      },
+      "format": {
+        "title": "التنسيق",
+        "tooltip": "التنسيق الذي يتم فيه تصدير البروكسي"
+      },
+      "location": {
+        "title": "الموقع",
+        "tooltip": "حدد موقع IP عشوائي أو استهدف بدقة دولة، ولاية، ومدينة",
+        "options": {
+          "random": "عشوائي",
+          "country": "الدولة"
+        },
+        "state": "الولاية",
+        "city": "المدينة"
+      },
+      "sessionType": {
+        "title": "نوع الجلسة",
+        "tooltip": "نوع الجلسة المنشأة بين العميل (متصفح، تطبيق، إلخ) وخادم البروكسي، بما في ذلك IP ثابت و IP متغير. ثابت: احتفظ بنفس عنوان IP لمدة تصل إلى 1440 دقيقة. متغير: اختر جلسة متغيرة للحصول على IP جديد مع كل طلب",
+        "options": {
+          "dynamic": "ديناميكي",
+          "static": "ثابت"
+        }
+      },
+      "ttl": {
+        "title": "TTL",
+        "tooltip": "مدة حياة البروكسي"
+      },
+      "count": {
+        "title": "العدد",
+        "tooltip": "عدد البروكسيات التي يتم إنشاؤها في وقت واحد"
+      },
+      "showMoreOptions": "عرض المزيد من الخيارات",
+      "hideMoreOptions": "إخفاء المزيد من الخيارات",
+      "saveAndClose": "حفظ وإغلاق",
+      "proxyGenerated": "تم إنشاء البروكسي"
+    },
+    "referralPage": {
+      "title": "برنامج الإحالة",
+      "totalReferrals": "إجمالي الإحالات",
+      "totalMoneyFromReferrals": "إجمالي الأموال من الإحالات",
+      "totalMoneyOnHold": "إجمالي الأموال المعلقة",
+      "canBeWithdrawn": "يمكن سحبه",
+      "yourReferralLink": "رابط الإحالة الخاص بك",
+      "changeReferralCode": "تغيير رمز الإحالة",
+      "transferToBalance": "تحويل إلى الرصيد",
+      "withdrawMoney": "سحب الأموال"
+    }
+  }
+  

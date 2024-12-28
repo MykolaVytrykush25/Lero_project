@@ -1,0 +1,19 @@
+@import "@/scss/variables.scss";
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &::after,
+  &::before {
+    content: "";
+    width: 95%;
+    height: 1px;
+    background-color: $dark-gray-100;
+  }
+
+  button {
+    min-width: max-content;
+  }
+}

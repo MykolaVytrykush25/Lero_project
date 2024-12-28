@@ -1,0 +1,96 @@
+@import "@/scss/variables.scss";
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: all $transition250;
+  flex-shrink: 0;
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &__sm {
+    width: 32px;
+    height: 32px;
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &__md {
+    width: 40px;
+    height: 40px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__lg {
+    width: 48px;
+    height: 48px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__primary {
+    background-color: $primary;
+
+    &:hover {
+      background-color: darken($primary, 15%);
+    }
+
+    svg path {
+      fill: $dark-gray-800;
+    }
+  }
+
+  &__secondary {
+    background-color: $dark-gray-400;
+
+    &:disabled {
+      background-color: $dark-gray-300;
+
+      svg path {
+        fill: $dark-gray-200;
+      }
+    }
+
+    &:hover {
+      background-color: lighten($dark-gray-400, 10%);
+    }
+
+    svg path {
+      fill: $white;
+    }
+  }
+
+  &__tertiary {
+    background-color: $dark-gray-700;
+
+    &:disabled {
+      background-color: $dark-gray-300;
+
+      svg path {
+        fill: $dark-gray-200;
+      }
+    }
+
+    &:hover {
+      background-color: lighten($dark-gray-700, 10%);
+    }
+
+    svg path {
+      fill: $primary;
+    }
+  }
+}

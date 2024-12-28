@@ -1,0 +1,59 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.alert {
+  padding: 24px;
+  border-radius: 8px;
+  background-color: rgba($warning-500, 0.2);
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  &__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($warning-500, 0.2);
+
+    svg {
+      width: 24px;
+      height: 24px;
+
+      path {
+        fill: $warning-500;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+
+    p {
+      color: $blue-gray;
+      font-weight: 600;
+      line-height: 24px;
+
+      @include SmallTablet{
+        font-size: 14px;
+      }
+    }
+  }
+
+  button {
+    color: $warning-500;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+  }
+}

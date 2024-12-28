@@ -1,0 +1,48 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.list {
+  overflow-y: hidden;
+  height: 100vh;
+  width: 480px;
+
+  @include Mobile {
+    width: 100vw;
+  }
+
+  &__wrapper {
+    background-color: $gray-600;
+    padding: 24px;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    @include Mobile {
+      padding: 16px;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    span {
+      color: $blue-gray;
+    }
+  }
+
+  &__items {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include CustomScroll;
+  }
+}

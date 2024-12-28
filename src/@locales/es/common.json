@@ -1,0 +1,166 @@
+{
+    "base": {
+      "provider": "Proveedor",
+      "from": "de",
+      "login": "Iniciar sesión",
+      "register": "Registrarse",
+      "change": "Cambiar",
+      "changePassword": "Cambiar contraseña",
+      "deposit": "Depositar",
+      "amount": "Monto",
+      "yourAmount": "Tu monto",
+      "proceedThePayment": "Proceder al pago",
+      "GB": "GB",
+      "prolong": "Prorrogar",
+      "generate": "Generar",
+      "payForGoods": "Pagar por bienes",
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "total": "Total",
+      "balance": "Saldo"
+    },
+    "menu": {
+      "title": "Menú",
+      "accounts": "Cuentas",
+      "proxy": "Proxy"
+    },
+    "profileMenu": {
+      "profile": "Perfil",
+      "myPurchases": "Mis compras",
+      "referral": "Referencia",
+      "logout": "Cerrar sesión"
+    },
+    "loginPage": {
+      "fields": {
+        "usernameOrEmail": "Nombre de usuario o correo electrónico",
+        "password": "Contraseña"
+      },
+      "errors": {
+        "username": "Se requiere nombre de usuario o correo electrónico",
+        "password": "Se requiere contraseña"
+      },
+      "helperText": "¿No tienes una cuenta?"
+    },
+    "registerPage": {
+      "fields": {
+        "username": "Nombre de usuario",
+        "email": "Correo electrónico",
+        "password": "Contraseña",
+        "refCode": "Código de referencia (opcional)"
+      },
+      "errors": {
+        "usernameMinLength": "El nombre de usuario debe tener al menos 4 caracteres",
+        "usernameRequired": "Se requiere nombre de usuario",
+        "emailInvalid": "Dirección de correo electrónico inválida",
+        "emailRequired": "Se requiere correo electrónico",
+        "passwordMinLength": "La contraseña debe tener al menos 8 caracteres",
+        "passwordRequired": "Se requiere contraseña"
+      },
+      "helperText": "¿Ya tienes una cuenta?"
+    },
+    "proxyPage": {
+      "title": "Proxy",
+      "chooseProvider": "Elige un proveedor",
+      "forPayment": "Para el pago",
+      "placeOrder": "Hacer un pedido"
+    },
+    "profilePage": {
+      "title": "Perfil",
+      "personalInfo": "Información personal",
+      "depositNow": "Depositar ahora"
+    },
+    "temporaryUserAlert": {
+      "title": "Actualiza tus datos de perfil",
+      "description": "Actualmente tienes una cuenta temporal. Actualiza tus datos para mantener el acceso, de lo contrario, puedes perder tu cuenta."
+    },
+    "changePasswordModal": {
+      "currentPassword": "Contraseña actual",
+      "newPassword": "Nueva contraseña",
+      "confirmNewPassword": "Confirmar nueva contraseña"
+    },
+    "depositHistory": {
+      "order": "Pedido",
+      "date": "Fecha",
+      "paymentMethod": "Método de pago",
+      "status": "Estado"
+    },
+    "myPurchasesPage": {
+      "title": "Mis compras",
+      "proxyFilters": {
+        "showActiveOrders": "Mostrar pedidos activos",
+        "proxyType": "Tipo de proxy",
+        "allProxyTypes": "Todos los tipos de proxy",
+        "residentialProxy": "Proxy residencial",
+        "ispProxy": "ISP"
+      }
+    },
+    "proxyPurchasesItem": {
+      "proxyType": "Tipo de proxy",
+      "trafficLeft": "Tráfico restante",
+      "validUntil": "Válido hasta",
+      "statuses": {
+        "active": "Activo",
+        "ended": "Finalizado"
+      }
+    },
+    "trafficProgress": {
+      "trafficUsed": "Tráfico utilizado"
+    },
+    "generateProxyPage": {
+      "title": "Generar proxy",
+      "availableOrders": {
+        "title": "Órdenes disponibles",
+        "tooltip": "Tus órdenes"
+      },
+      "protocol": {
+        "title": "Protocolo",
+        "tooltip": "El protocolo de comunicación específico utilizado entre el dispositivo cliente y el servidor proxy, incluyendo Endpoint:Puerto, HTTP(S) y SOCKS5"
+      },
+      "format": {
+        "title": "Formato",
+        "tooltip": "Formato en el que se exportan los proxies"
+      },
+      "location": {
+        "title": "Ubicación",
+        "tooltip": "Selecciona una ubicación IP aleatoria o dirígete específicamente a un país, estado y ciudad",
+        "options": {
+          "random": "Aleatorio",
+          "country": "País"
+        },
+        "state": "Estado",
+        "city": "Ciudad"
+      },
+      "sessionType": {
+        "title": "Tipo de sesión",
+        "tooltip": "El tipo de sesión establecida entre el cliente (navegador web, aplicación, etc.) y el servidor proxy, incluyendo una IP fija y una IP rotativa. Fija: Mantén la misma dirección IP durante hasta 1440 minutos con una sesión fija. Rotativa: Elige una sesión rotativa para obtener una nueva IP con cada solicitud",
+        "options": {
+          "dynamic": "Dinámica",
+          "static": "Estática"
+        }
+      },
+      "ttl": {
+        "title": "TTL",
+        "tooltip": "Tiempo de vida del proxy"
+      },
+      "count": {
+        "title": "Cantidad",
+        "tooltip": "Número de proxies generados a la vez"
+      },
+      "showMoreOptions": "Mostrar más opciones",
+      "hideMoreOptions": "Ocultar más opciones",
+      "saveAndClose": "Guardar y cerrar",
+      "proxyGenerated": "proxy generado"
+    },
+    "referralPage": {
+      "title": "Programa de referidos",
+      "totalReferrals": "Total de referidos",
+      "totalMoneyFromReferrals": "Total de dinero de referidos",
+      "totalMoneyOnHold": "Total de dinero en espera",
+      "canBeWithdrawn": "Puede ser retirado",
+      "yourReferralLink": "Tu enlace de referencia",
+      "changeReferralCode": "Cambiar código de referencia",
+      "transferToBalance": "Transferir a saldo",
+      "withdrawMoney": "Retirar dinero"
+    }
+  }
+  

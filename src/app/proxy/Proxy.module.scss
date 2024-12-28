@@ -1,0 +1,46 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+    @include AnySize(850px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    &__filters {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      @include SmallTablet {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}

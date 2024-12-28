@@ -1,0 +1,59 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.review {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+
+    @include SmallTablet {
+      flex-direction: column;
+      gap: 12px;
+    }
+  }
+
+  &__main {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    // @include SmallTablet {
+    //   flex-direction: column;
+    // }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      p {
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 24px;
+        color: $blue-gray;
+        font-weight: 600;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+
+    @include SmallTablet {
+      align-self: flex-end;
+    }
+
+    p {
+      color: $blue-gray;
+    }
+  }
+}

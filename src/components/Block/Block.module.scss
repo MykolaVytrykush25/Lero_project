@@ -1,0 +1,13 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.block {
+	width: 100%;
+	padding: 24px;
+	background-color: $gray-600;
+	border-radius: 16px;
+
+	@include Tablet {
+		padding: 16px;
+	}
+}

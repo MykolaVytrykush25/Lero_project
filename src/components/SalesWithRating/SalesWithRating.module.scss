@@ -1,0 +1,24 @@
+@import "@/scss/variables.scss";
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__divider {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: $blue-gray;
+  }
+
+  p,
+  a {
+    font-weight: 600;
+    color: $blue-gray;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}

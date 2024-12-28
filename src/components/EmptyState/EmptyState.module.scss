@@ -1,0 +1,43 @@
+@import "@/scss/variables.scss";
+
+.empty {
+    padding: 24px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__icon {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100%;
+        background-color: $dark-gray-800;
+
+        svg {
+            width: 24px;
+            height: 24px;
+
+            path {
+                fill: $primary;
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        p {
+            text-align: center;
+            color: $blue-gray;
+        }
+    }
+}

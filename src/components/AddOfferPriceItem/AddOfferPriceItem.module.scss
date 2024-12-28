@@ -1,0 +1,32 @@
+@import "@/scss/mixins.scss";
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &__counter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__value {
+      min-width: 124px !important;
+
+      @include SmallTablet {
+        min-width: 80px !important;
+      }
+
+      @include Mobile {
+        min-width: 64px !important;
+      }
+    }
+
+    &__tooltip {
+      @include SmallTablet {
+        display: none !important;
+      }
+    }
+  }
+}

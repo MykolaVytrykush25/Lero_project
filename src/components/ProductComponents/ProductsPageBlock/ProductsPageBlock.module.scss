@@ -1,0 +1,45 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.block {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p {
+      color: $blue-gray;
+      font-weight: 600;
+    }
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 16px;
+
+    @include Mobile {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::after,
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $dark-gray-100;
+    }
+  }
+}

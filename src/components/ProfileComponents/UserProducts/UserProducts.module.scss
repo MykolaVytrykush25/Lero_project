@@ -1,0 +1,24 @@
+@import "@/scss/mixins.scss";
+
+.products {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 16px;
+
+        @include Mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+    }
+}

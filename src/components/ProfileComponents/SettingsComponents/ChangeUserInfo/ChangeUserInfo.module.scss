@@ -1,0 +1,12 @@
+.info {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  button {
+    align-self: flex-start;
+    min-width: 120px;
+  }
+}

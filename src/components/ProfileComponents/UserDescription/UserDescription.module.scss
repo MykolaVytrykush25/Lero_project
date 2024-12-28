@@ -1,0 +1,13 @@
+@import "@/scss/variables.scss";
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    p {
+        font-weight: 600;
+        line-height: 24px;
+        color: $blue-gray;
+    }
+}

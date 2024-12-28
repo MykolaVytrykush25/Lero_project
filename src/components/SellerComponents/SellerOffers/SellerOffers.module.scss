@@ -1,0 +1,26 @@
+@import "@/scss/mixins.scss";
+
+.offers {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 16px;
+
+    @include Mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

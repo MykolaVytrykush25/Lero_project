@@ -1,0 +1,166 @@
+{
+    "base": {
+      "provider": "제공자",
+      "from": "에서",
+      "login": "로그인",
+      "register": "회원가입",
+      "change": "변경",
+      "changePassword": "비밀번호 변경",
+      "deposit": "입금",
+      "amount": "금액",
+      "yourAmount": "당신의 금액",
+      "proceedThePayment": "결제 진행",
+      "GB": "GB",
+      "prolong": "연장",
+      "generate": "생성",
+      "payForGoods": "상품 결제",
+      "copy": "복사",
+      "copied": "복사됨",
+      "total": "총합",
+      "balance": "잔고"
+    },
+    "menu": {
+      "title": "메뉴",
+      "accounts": "계정",
+      "proxy": "프록시"
+    },
+    "profileMenu": {
+      "profile": "프로필",
+      "myPurchases": "내 구매",
+      "referral": "추천",
+      "logout": "로그아웃"
+    },
+    "loginPage": {
+      "fields": {
+        "usernameOrEmail": "사용자 이름 또는 이메일",
+        "password": "비밀번호"
+      },
+      "errors": {
+        "username": "사용자 이름 또는 이메일이 필요합니다",
+        "password": "비밀번호가 필요합니다"
+      },
+      "helperText": "계정이 없으신가요?"
+    },
+    "registerPage": {
+      "fields": {
+        "username": "사용자 이름",
+        "email": "이메일",
+        "password": "비밀번호",
+        "refCode": "추천 코드 (선택 사항)"
+      },
+      "errors": {
+        "usernameMinLength": "사용자 이름은 최소 4자 이상이어야 합니다",
+        "usernameRequired": "사용자 이름이 필요합니다",
+        "emailInvalid": "잘못된 이메일 주소입니다",
+        "emailRequired": "이메일이 필요합니다",
+        "passwordMinLength": "비밀번호는 최소 8자 이상이어야 합니다",
+        "passwordRequired": "비밀번호가 필요합니다"
+      },
+      "helperText": "이미 계정이 있으신가요?"
+    },
+    "proxyPage": {
+      "title": "프록시",
+      "chooseProvider": "제공자 선택",
+      "forPayment": "결제를 위해",
+      "placeOrder": "주문하기"
+    },
+    "profilePage": {
+      "title": "프로필",
+      "personalInfo": "개인 정보",
+      "depositNow": "지금 입금하기"
+    },
+    "temporaryUserAlert": {
+      "title": "프로필 데이터 업데이트",
+      "description": "현재 임시 계정이 있습니다. 접근을 유지하려면 데이터를 업데이트하세요. 그렇지 않으면 계정을 잃을 수 있습니다."
+    },
+    "changePasswordModal": {
+      "currentPassword": "현재 비밀번호",
+      "newPassword": "새 비밀번호",
+      "confirmNewPassword": "새 비밀번호 확인"
+    },
+    "depositHistory": {
+      "order": "주문",
+      "date": "날짜",
+      "paymentMethod": "결제 방법",
+      "status": "상태"
+    },
+    "myPurchasesPage": {
+      "title": "내 구매",
+      "proxyFilters": {
+        "showActiveOrders": "활성 주문 보기",
+        "proxyType": "프록시 유형",
+        "allProxyTypes": "모든 프록시 유형",
+        "residentialProxy": "주거용 프록시",
+        "ispProxy": "ISP"
+      }
+    },
+    "proxyPurchasesItem": {
+      "proxyType": "프록시 유형",
+      "trafficLeft": "남은 트래픽",
+      "validUntil": "유효 기간",
+      "statuses": {
+        "active": "활성",
+        "ended": "종료됨"
+      }
+    },
+    "trafficProgress": {
+      "trafficUsed": "사용된 트래픽"
+    },
+    "generateProxyPage": {
+      "title": "프록시 생성",
+      "availableOrders": {
+        "title": "사용 가능한 주문",
+        "tooltip": "당신의 주문"
+      },
+      "protocol": {
+        "title": "프로토콜",
+        "tooltip": "클라이언트 장치와 프록시 서버 간에 사용되는 특정 통신 프로토콜로, Endpoint:Port, HTTP(S) 및 SOCKS5 포함"
+      },
+      "format": {
+        "title": "형식",
+        "tooltip": "프록시가 내보내지는 형식"
+      },
+      "location": {
+        "title": "위치",
+        "tooltip": "무작위 IP 위치를 선택하거나 특정 국가, 주 및 도시를 대상으로 설정",
+        "options": {
+          "random": "무작위",
+          "country": "국가"
+        },
+        "state": "주",
+        "city": "도시"
+      },
+      "sessionType": {
+        "title": "세션 유형",
+        "tooltip": "클라이언트(웹 브라우저, 앱 등)와 프록시 서버 간에 설정되는 세션 유형으로, 스티키 IP 및 회전 IP 포함. 스티키: 스티키 세션으로 최대 1440분 동안 동일한 IP 주소를 유지. 회전: 각 요청마다 새로운 IP를 얻기 위해 회전 세션 선택",
+        "options": {
+          "dynamic": "동적",
+          "static": "정적"
+        }
+      },
+      "ttl": {
+        "title": "TTL",
+        "tooltip": "프록시의 생존 시간"
+      },
+      "count": {
+        "title": "수량",
+        "tooltip": "한 번에 생성되는 프록시 수"
+      },
+      "showMoreOptions": "더 많은 옵션 보기",
+      "hideMoreOptions": "더 많은 옵션 숨기기",
+      "saveAndClose": "저장하고 닫기",
+      "proxyGenerated": "프록시 생성됨"
+    },
+    "referralPage": {
+      "title": "추천 프로그램",
+      "totalReferrals": "총 추천 수",
+      "totalMoneyFromReferrals": "추천으로부터의 총 금액",
+      "totalMoneyOnHold": "보류 중인 총 금액",
+      "canBeWithdrawn": "인출 가능",
+      "yourReferralLink": "당신의 추천 링크",
+      "changeReferralCode": "추천 코드 변경",
+      "transferToBalance": "잔고로 이체",
+      "withdrawMoney": "돈 인출"
+    }
+  }
+  

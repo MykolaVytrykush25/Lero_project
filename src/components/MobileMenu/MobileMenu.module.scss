@@ -1,0 +1,47 @@
+@import "@/scss/variables.scss";
+
+.menu {
+  width: 100%;
+  background-color: rgba($gray-600, 0.6) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  padding: 24px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+
+    &__lang {
+      background-color: $gray-600;
+      border-radius: 8px;
+    }
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      &__title {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 8px;
+        text-transform: uppercase;
+        color: $blue-gray;
+      }
+    }
+  }
+}

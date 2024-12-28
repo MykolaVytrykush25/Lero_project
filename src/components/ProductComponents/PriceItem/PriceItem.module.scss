@@ -1,0 +1,50 @@
+@import "@/scss/variables.scss";
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: $dark-gray-800;
+  border: 1px solid $dark-gray-800;
+  transition: all $transition250;
+
+  &__selected {
+    border: 1px solid $primary;
+  }
+
+  &__count {
+    color: $blue-gray;
+
+    span {
+      color: $white;
+      font-weight: 600;
+    }
+  }
+
+  &__price {
+    color: $primary;
+    font-weight: 600;
+  }
+
+  &:first-child {
+    grid-column: span 3;
+    position: relative;
+
+    &::after {
+      content: "Popular";
+      color: $black;
+      position: absolute;
+      top: -12px;
+      left: -8px;
+      z-index: 5;
+      background-color: $primary;
+      padding: 4px 8px;
+      border-radius: 8px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+  }
+}

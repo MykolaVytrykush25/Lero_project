@@ -1,0 +1,41 @@
+@import "@/scss/variables.scss";
+
+.sellers {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: rgba($primary, 0.15);
+  cursor: pointer;
+
+  &__info {
+    width: 100%;
+
+    p,
+    span {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+
+    p {
+      color: $white;
+    }
+
+    span {
+      color: $primary;
+    }
+  }
+
+  &__count {
+    display: block;
+    padding: 0 8px;
+    border-radius: 4px;
+    color: $primary;
+    background-color: rgba($primary, 0.15);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+}

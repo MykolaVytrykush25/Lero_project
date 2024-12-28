@@ -1,0 +1,51 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.item {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  &__image {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+  }
+
+  &__main {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    @include Mobile {
+      flex-direction: column;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+
+      &__description {
+        color: $blue-gray;
+      }
+
+      &__tags {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  &__copy {
+    @include SmallTablet {
+      display: none !important;
+    }
+  }
+}

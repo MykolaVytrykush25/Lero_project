@@ -1,0 +1,49 @@
+@import "@/scss/variables.scss";
+
+.prices {
+  .highlighted {
+    color: $white;
+    font-weight: 600;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  &__count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+
+    p {
+      color: $primary;
+      font-weight: 600;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    p {
+      color: $blue-gray;
+      font-size: 14px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "base": {
+    "provider": "Постачальник",
+    "from": "з",
+    "login": "Увійти",
+    "register": "Зареєструватися",
+    "change": "Змінити",
+    "changePassword": "Змінити пароль",
+    "deposit": "Депозит",
+    "amount": "Сума",
+    "yourAmount": "Ваша сума",
+    "proceedThePayment": "Продовжити платіж",
+    "GB": "ГБ",
+    "prolong": "Продовжити",
+    "generate": "Генерувати",
+    "payForGoods": "Оплатити товари",
+    "copy": "Копіювати",
+    "copied": "Скопійовано",
+    "total": "Всього",
+    "balance": "Баланс"
+  },
+  "menu": {
+    "title": "Меню",
+    "accounts": "Облікові записи",
+    "proxy": "Проксі"
+  },
+  "profileMenu": {
+    "profile": "Профіль",
+    "myPurchases": "Мої покупки",
+    "referral": "Реферальна програма",
+    "logout": "Вийти"
+  },
+  "loginPage": {
+    "fields": {
+      "usernameOrEmail": "Ім'я користувача або Email",
+      "password": "Пароль"
+    },
+    "errors": {
+      "username": "Необхідно вказати ім'я користувача або Email",
+      "password": "Необхідно вказати пароль"
+    },
+    "helperText": "Немає облікового запису?"
+  },
+  "registerPage": {
+    "fields": {
+      "username": "Ім'я користувача",
+      "email": "Email",
+      "password": "Пароль",
+      "refCode": "Реферальний код (необов'язково)"
+    },
+    "errors": {
+      "usernameMinLength": "Ім'я користувача має містити не менше 4 символів",
+      "usernameRequired": "Необхідно вказати ім'я користувача",
+      "emailInvalid": "Неправильна адреса Email",
+      "emailRequired": "Необхідно вказати Email",
+      "passwordMinLength": "Пароль має містити не менше 8 символів",
+      "passwordRequired": "Необхідно вказати пароль"
+    },
+    "helperText": "Вже є обліковий запис?"
+  },
+  "proxyPage": {
+    "title": "Проксі",
+    "chooseProvider": "Вибрати постачальника",
+    "forPayment": "Для оплати",
+    "placeOrder": "Зробити замовлення"
+  },
+  "profilePage": {
+    "title": "Профіль",
+    "personalInfo": "Особиста інформація",
+    "depositNow": "Поповнити зараз"
+  },
+  "temporaryUserAlert": {
+    "title": "Оновіть дані профілю",
+    "description": "У вас наразі тимчасовий обліковий запис. Оновіть свої дані, щоб зберегти доступ, в іншому випадку ви можете втратити свій обліковий запис."
+  },
+  "changePasswordModal": {
+    "currentPassword": "Поточний пароль",
+    "newPassword": "Новий пароль",
+    "confirmNewPassword": "Підтвердьте новий пароль"
+  },
+  "depositHistory": {
+    "order": "Замовлення",
+    "date": "Дата",
+    "paymentMethod": "Спосіб оплати",
+    "status": "Статус"
+  },
+  "myPurchasesPage": {
+    "title": "Мої покупки",
+    "proxyFilters": {
+      "showActiveOrders": "Показати активні замовлення",
+      "proxyType": "Тип проксі",
+      "allProxyTypes": "Усі типи проксі",
+      "residentialProxy": "Резидентний проксі",
+      "ispProxy": "ISP"
+    }
+  },
+  "proxyPurchasesItem": {
+    "proxyType": "Тип проксі",
+    "trafficLeft": "Залишилось трафіку",
+    "validUntil": "Дійсно до",
+    "statuses": {
+      "active": "Активний",
+      "ended": "Закінчився"
+    }
+  },
+  "trafficProgress": {
+    "trafficUsed": "Використаний трафік"
+  },
+  "generateProxyPage": {
+    "title": "Генерувати проксі",
+    "availableOrders": {
+      "title": "Доступні замовлення",
+      "tooltip": "Ваші замовлення"
+    },
+    "protocol": {
+      "title": "Протокол",
+      "tooltip": "Конкретний комунікаційний протокол, що використовується між клієнтським пристроєм та проксі-сервером, включаючи Endpoint:Port, HTTP(S) та SOCKS5"
+    },
+    "format": {
+      "title": "Формат",
+      "tooltip": "Формат, в якому експортуються проксі"
+    },
+    "location": {
+      "title": "Локація",
+      "tooltip": "Виберіть випадкову IP-локацію або точно націліть на країну, штат і місто",
+      "options": {
+        "random": "Випадкова",
+        "country": "Країна"
+      },
+      "state": "Штат",
+      "city": "Місто"
+    },
+    "sessionType": {
+      "title": "Тип сесії",
+      "tooltip": "Тип сесії, встановлений між клієнтом (веб-браузер, додаток тощо) і проксі-сервером, включаючи фіксований IP і обертовий IP. Фіксований: Залишайте той же IP-адресу до 1440 хвилин з фіксованою сесією. Обертовий: Виберіть обертову сесію, щоб отримати новий IP з кожним запитом",
+      "options": {
+        "dynamic": "Динамічний",
+        "static": "Статичний"
+      }
+    },
+    "ttl": {
+      "title": "TTL",
+      "tooltip": "Час життя проксі"
+    },
+    "count": {
+      "title": "Кількість",
+      "tooltip": "Кількість проксі, які генеруються одночасно"
+    },
+    "showMoreOptions": "Показати більше параметрів",
+    "hideMoreOptions": "Сховати більше параметрів",
+    "saveAndClose": "Зберегти та закрити",
+    "proxyGenerated": "проксі згенеровано"
+  },
+  "referralPage": {
+    "title": "Реферальна програма",
+    "totalReferrals": "Всього рефералів",
+    "totalMoneyFromReferrals": "Всього грошей з рефералів",
+    "totalMoneyOnHold": "Всього грошей на утриманні",
+    "canBeWithdrawn": "Можна вивести",
+    "yourReferralLink": "Ваш реферальний лінк",
+    "changeReferralCode": "Змінити реферальний код",
+    "transferToBalance": "Перевести на баланс",
+    "withdrawMoney": "Вивести гроші"
+  }
+}

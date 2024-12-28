@@ -1,0 +1,21 @@
+@import "@/scss/variables.scss";
+
+.block {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+        gap: 16px;
+    }
+}

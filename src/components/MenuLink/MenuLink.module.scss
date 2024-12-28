@@ -1,0 +1,44 @@
+@import "@/scss/variables.scss";
+
+.link {
+  width: 100%;
+  display: flex;
+  font-size: 16px;
+  padding: 8px;
+  align-items: center;
+  gap: 8px;
+  color: $blue-gray;
+  line-height: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &__active {
+    color: $primary;
+    background-color: $dark-gray-700;
+
+    svg path {
+      fill: $primary;
+    }
+  }
+
+  &__title {
+    transition: all $transition250;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+    path {
+      transition: all $transition250;
+    }
+  }
+
+  &:hover {
+    color: $primary;
+
+    svg path {
+      fill: $primary;
+    }
+  }
+}

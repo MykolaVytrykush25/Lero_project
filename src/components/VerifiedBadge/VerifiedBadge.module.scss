@@ -1,0 +1,18 @@
+@import "@/scss/variables.scss";
+
+.badge {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 100%;
+  background-color: rgba($primary, 0.1);
+
+  svg {
+    width: 16px;
+    height: 16px;
+
+    path {
+      fill: $primary;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "@/scss/variables.scss";
+
+.button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  background-color: $dark-gray-400;
+
+  &:hover {
+    svg path {
+      fill: $white;
+    }
+  }
+
+  svg {
+    width: 24px !important;
+    height: 24px !important;
+
+    path {
+      transition: all 0.3s ease-in-out;
+      fill: $blue-gray;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "@/scss/variables.scss";
+
+.button {
+  background-color: rgba($error-500, 0.2) !important;
+  color: $error-500 !important;
+  min-width: max-content !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &:hover {
+    color: rgba($error-500, 0.7) !important;
+
+    svg path {
+      fill: rgba($error-500, 0.7);
+    }
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+    path {
+      fill: $error-500;
+      transition: all 0.25s ease-in-out;
+    }
+  }
+}

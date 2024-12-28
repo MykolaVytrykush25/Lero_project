@@ -1,0 +1,79 @@
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+
+html {
+  &::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+}
+
+main {
+  width: 100%;
+  background-color: $gray-900;
+  min-height: 100vh;
+  padding: 48px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @include Tablet {
+    padding: 24px 40px;
+  }
+
+  @include SmallTablet {
+    padding: 24px;
+  }
+
+  @include Mobile {
+    padding: 16px;
+  }
+}
+
+.container {
+  height: 100%;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+p,
+label {
+  color: $white;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $white;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 32px;
+
+  @include Mobile {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+
+  @include Mobile {
+    font-size: 22px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+

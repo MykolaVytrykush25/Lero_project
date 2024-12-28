@@ -1,0 +1,22 @@
+@import "@/scss/variables.scss";
+
+.history {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+}

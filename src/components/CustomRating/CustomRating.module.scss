@@ -1,0 +1,13 @@
+@import "@/scss/variables.scss";
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  p {
+    color: $blue-gray;
+    line-height: 24px;
+    font-weight: 600;
+  }
+}

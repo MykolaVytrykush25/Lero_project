@@ -1,0 +1,165 @@
+{
+  "base": {
+    "provider": "Провайдер",
+    "from": "от",
+    "login": "Войти",
+    "register": "Регистрация",
+    "change": "Изменить",
+    "changePassword": "Изменить пароль",
+    "deposit": "Пополнить",
+    "amount": "Сумма",
+    "yourAmount": "Ваша сумма",
+    "proceedThePayment": "Перейти к оплате",
+    "GB": "ГБ",
+    "prolong": "Продлить",
+    "generate": "Сгенерировать",
+    "payForGoods": "Оплатить товары",
+    "copy": "Копировать",
+    "copied": "Скопировано",
+    "total": "Итого",
+    "balance": "Баланс"
+  },
+  "menu": {
+    "title": "Меню",
+    "accounts": "Аккаунты",
+    "proxy": "Прокси"
+  },
+  "profileMenu": {
+    "profile": "Профиль",
+    "myPurchases": "Мои покупки",
+    "referral": "Реферал",
+    "logout": "Выйти"
+  },
+  "loginPage": {
+    "fields": {
+      "usernameOrEmail": "Имя пользователя или Email",
+      "password": "Пароль"
+    },
+    "errors": {
+      "username": "Имя пользователя или Email обязательны",
+      "password": "Пароль обязателен"
+    },
+    "helperText": "Нет аккаунта?"
+  },
+  "registerPage": {
+    "fields": {
+      "username": "Имя пользователя",
+      "email": "Email",
+      "password": "Пароль",
+      "refCode": "Реферальный код (опционально)"
+    },
+    "errors": {
+      "usernameMinLength": "Имя пользователя должно содержать не менее 4 символов",
+      "usernameRequired": "Имя пользователя обязательно",
+      "emailInvalid": "Неверный Email",
+      "emailRequired": "Email обязателен",
+      "passwordMinLength": "Пароль должен содержать не менее 8 символов",
+      "passwordRequired": "Пароль обязателен"
+    },
+    "helperText": "Уже есть аккаунт?"
+  },
+  "proxyPage": {
+    "title": "Прокси",
+    "chooseProvider": "Выберите провайдера",
+    "forPayment": "Для оплаты",
+    "placeOrder": "Оформить заказ"
+  },
+  "profilePage": {
+    "title": "Профиль",
+    "personalInfo": "Личная информация",
+    "depositNow": "Пополнить сейчас"
+  },
+  "temporaryUserAlert": {
+    "title": "Обновите данные профиля",
+    "description": "У вас временный аккаунт. Обновите данные, чтобы сохранить доступ, иначе вы можете потерять аккаунт."
+  },
+  "changePasswordModal": {
+    "currentPassword": "Текущий пароль",
+    "newPassword": "Новый пароль",
+    "confirmNewPassword": "Подтвердите новый пароль"
+  },
+  "depositHistory": {
+    "order": "Заказ",
+    "date": "Дата",
+    "paymentMethod": "Метод оплаты",
+    "status": "Статус"
+  },
+  "myPurchasesPage": {
+    "title": "Мои покупки",
+    "proxyFilters": {
+      "showActiveOrders": "Показать активные заказы",
+      "proxyType": "Тип прокси",
+      "allProxyTypes": "Все типы прокси",
+      "residentialProxy": "Резидентный прокси",
+      "ispProxy": "ISP"
+    }
+  },
+  "proxyPurchasesItem": {
+    "proxyType": "Тип прокси",
+    "trafficLeft": "Осталось трафика",
+    "validUntil": "Действителен до",
+    "statuses": {
+      "active": "Активен",
+      "ended": "Завершен"
+    }
+  },
+  "trafficProgress": {
+    "trafficUsed": "Использовано трафика"
+  },
+  "generateProxyPage": {
+    "title": "Сгенерировать прокси",
+    "availableOrders": {
+      "title": "Доступные заказы",
+      "tooltip": "Ваши заказы"
+    },
+    "protocol": {
+      "title": "Протокол",
+      "tooltip": "Конкретный протокол связи, используемый между устройством клиента и прокси-сервером, включая Endpoint:Port, HTTP(S), и SOCKS5"
+    },
+    "format": {
+      "title": "Формат",
+      "tooltip": "Формат, в котором экспортируются прокси"
+    },
+    "location": {
+      "title": "Локация",
+      "tooltip": "Выберите случайное местоположение IP или точно нацельтесь на страну, штат и город",
+      "options": {
+        "random": "Случайное",
+        "country": "Страна"
+      },
+      "state": "Штат",
+      "city": "Город"
+    },
+    "sessionType": {
+      "title": "Тип сессии",
+      "tooltip": "Тип сессии, установленной между клиентом (браузер, приложение и т.д.) и прокси-сервером, включая статический IP и динамический IP. Статический: сохранение одного IP до 1440 минут в одной сессии. Динамический: выбор динамической сессии для получения нового IP с каждым запросом",
+      "options": {
+        "dynamic": "Динамическая",
+        "static": "Статическая"
+      }
+    },
+    "ttl": {
+      "title": "TTL",
+      "tooltip": "Время жизни прокси"
+    },
+    "count": {
+      "title": "Количество",
+      "tooltip": "Количество прокси, сгенерированных за раз"
+    },
+    "showMoreOptions": "Показать больше опций",
+    "hideMoreOptions": "Скрыть опции",
+    "saveAndClose": "Сохранить и закрыть",
+    "proxyGenerated": "прокси сгенерирован"
+  },
+  "referralPage": {
+    "title": "Реферальная программа",
+    "totalReferrals": "Всего рефералов",
+    "totalMoneyFromReferrals": "Всего денег от рефералов",
+    "totalMoneyOnHold": "Всего денег на удержании",
+    "canBeWithdrawn": "Можно вывести",
+    "yourReferralLink": "Ваша реферальная ссылка",
+    "changeReferralCode": "Изменить реферальный код",
+    "transferToBalance": "Перевести на баланс",
+    "withdrawMoney": "Вывести деньги"
+  }
+}

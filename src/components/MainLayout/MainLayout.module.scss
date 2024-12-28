@@ -1,0 +1,74 @@
+@import "@/scss/variables.scss";
+@import "@/scss/mixins.scss";
+
+.layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    &__main {
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        height: 100%;
+
+        @include Mobile {
+          gap: 16px;
+        }
+      }
+
+      & + .sidebar {
+        max-width: calc(100% - 73px);
+      }
+
+      &__userbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+
+        @include Mobile {
+          gap: 16px;
+        }
+
+        &__content {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 24px;
+
+          @include Mobile {
+            gap: 12px;
+          }
+
+          &__logo {
+            display: none;
+
+            @include Tablet {
+              display: block;
+            }
+
+            svg {
+              width: 45px;
+              height: 24px;
+            }
+          }
+        }
+
+        @include Laptop {
+          flex-direction: column-reverse;
+          gap: 16px;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "@/scss/variables.scss";
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba($primary, 0.1);
+  padding: 6px 16px;
+  border-bottom-right-radius: 16px;
+  width: max-content;
+
+  span,
+  p {
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  span {
+    color: $primary;
+    font-weight: 600;
+  }
+
+  p {
+    color: $blue-gray;
+  }
+}

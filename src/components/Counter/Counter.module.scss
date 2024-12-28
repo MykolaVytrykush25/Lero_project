@@ -1,0 +1,43 @@
+@import "@/scss/variables.scss";
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  button,
+  input {
+    border-radius: 8px;
+    background-color: $dark-gray-800;
+  }
+
+  input {
+    min-width: 60px;
+    max-width: 60px;
+    width: max-content;
+    padding: 4px;
+    color: $primary;
+    text-shadow: 0px 6.65px 5.32px rgba($primary, 0.1), 0px 2.767px 2.214px rgba($primary, 0.07);
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+  }
+
+  button {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 16px;
+      height: 16px;
+
+      path {
+        fill: $primary;
+      }
+    }
+  }
+}

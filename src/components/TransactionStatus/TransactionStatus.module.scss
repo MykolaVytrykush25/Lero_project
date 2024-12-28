@@ -1,0 +1,25 @@
+@import "@/scss/variables.scss";
+
+.status {
+    min-width: 80px;
+    width: max-content;
+    justify-self: center;
+    font-size: 12px;
+    font-weight: 700;
+    pointer-events: none;
+
+    &__success {
+        color: $primary !important;
+        background-color: rgba($primary, 0.1) !important;
+    }
+
+    &__warn {
+        color: $warning-500 !important;
+        background-color: rgba($warning-500, 0.1) !important;
+    }
+
+    &__error {
+        color: $error-500 !important;
+        background-color: rgba($error-500, 0.1) !important;
+    }
+}

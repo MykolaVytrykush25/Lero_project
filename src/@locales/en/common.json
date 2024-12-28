@@ -1,0 +1,163 @@
+{
+  "base": {
+    "provider": "Provider",
+    "from": "from",
+    "login": "Login",
+    "register": "Register",
+    "change": "Change",
+    "changePassword": "Change password",
+    "deposit": "Deposit",
+    "amount": "Amount",
+    "yourAmount": "Your amount",
+    "proceedThePayment": "Proceed to the payment",
+    "GB": "GB",
+    "prolong": "Prolong",
+    "generate": "Generate",
+    "payForGoods": "Payment",
+    "copy": "Copy",
+    "copied": "Copied",
+    "total": "Total",
+    "balance": "Balance",
+    "defaultError": "Server error"
+  },
+  "menu": {
+    "title": "Menu",
+    "accounts": "Accounts",
+    "proxy": "Proxy"
+  },
+  "profileMenu": {
+    "profile": "Profile",
+    "myPurchases": "My purchases",
+    "referral": "Referral",
+    "logout": "Logout"
+  },
+  "loginPage": {
+    "fields": {
+      "usernameOrEmail": "Username or Email",
+      "password": "Password"
+    },
+    "errors": {
+      "username": "Username or Email is required",
+      "password": "Password is required"
+    },
+    "helperText": "Don't have an account ?"
+  },
+  "registerPage": {
+    "fields": {
+      "username": "Username",
+      "email": "Email",
+      "password": "Password",
+      "refCode": "Referral Code (optional)"
+    },
+    "errors": {
+      "usernameMinLength": "Username must be at least 4 characters long",
+      "usernameRequired": "Username is required",
+      "emailInvalid": "Invalid email address",
+      "emailRequired": "Email is required",
+      "passwordMinLength": "Password must be at least 8 characters long",
+      "passwordRequired": "Password is required"
+    },
+    "helperText": "Already have an account ?"
+  },
+  "proxyPage": {
+    "title": "Proxy market",
+    "chooseProvider": "Choose provider",
+    "forPayment": "For payment",
+    "placeOrder": "Place an order"
+  },
+  "profilePage": {
+    "title": "Profile",
+    "personalInfo": "Personal info",
+    "depositNow": "Deposit now"
+  },
+  "temporaryUserAlert": {
+    "title": "Update your profile data",
+    "description": "You have temporary account at the moment. Update your data to keep access, otherwise you can lose your account."
+  },
+  "changePasswordModal": {
+    "currentPassword": "Current password",
+    "newPassword": "New password",
+    "confirmNewPassword": "Confirm new password"
+  },
+  "depositHistory": {
+    "order": "Order",
+    "date": "Date",
+    "paymentMethod": "Payment method",
+    "status": "Status"
+  },
+  "myPurchasesPage": {
+    "title": "My purchases",
+    "proxyFilters": {
+      "showActiveOrders": "Show active orders",
+      "proxyType": "Proxy type",
+      "allProxyTypes": "All proxy types",
+      "residentialProxy": "Residential proxy",
+      "ispProxy": "ISP"
+    }
+  },
+  "proxyPurchasesItem": {
+    "proxyType": "Proxy type",
+    "trafficLeft": "Traffic left",
+    "validUntil": "Valid until",
+    "statuses": {
+      "active": "Active",
+      "ended": "Ended"
+    }
+  },
+  "generateProxyPage": {
+    "title": "Generate proxy",
+    "availableOrders": {
+      "title": "Available orders",
+      "tooltip": "Your orders"
+    },
+    "protocol": {
+      "title": "Protocol",
+      "tooltip": "The specific communication protocol used between the client device and the proxy server, including Endpoint:Port, HTTP(S), and SOCKS5"
+    },
+    "format": {
+      "title": "Format",
+      "tooltip": "Format in which proxies are exported"
+    },
+    "location": {
+      "title": "Location",
+      "tooltip": "Select a random IP location or precisely targeting to a country, a state, and a city",
+      "options": {
+        "random": "Random",
+        "country": "Country"
+      },
+      "state": "State",
+      "city": "City"
+    },
+    "sessionType": {
+      "title": "Session type",
+      "tooltip": "The type of session established between the client (web browser, app, etc.) and the proxy server, including a sticky IP and a rotating IP. Sticky: Keep the same IP address for up to 1440 minutes with a sticky session. Rotating: Choose a rotating session to get a new IP with each request",
+      "options": {
+        "dynamic": "Dynamic",
+        "static": "Static"
+      }
+    },
+    "ttl": {
+      "title": "TTL",
+      "tooltip": "Time to live proxy"
+    },
+    "count": {
+      "title": "Count",
+      "tooltip": "Number of proxies generated at once"
+    },
+    "showMoreOptions": "Show more options",
+    "hideMoreOptions": "Hide more options",
+    "saveAndClose": "Save and close",
+    "proxyGenerated": "proxy generated"
+  },
+  "referralPage": {
+    "title": "Referral program",
+    "totalReferrals": "Total referrals",
+    "totalMoneyFromReferrals": "Total money from referrals",
+    "totalMoneyOnHold": "Total money on hold",
+    "canBeWithdrawn": "Can be withdrawn",
+    "yourReferralLink": "Your referral link",
+    "changeReferralCode": "Change referral code",
+    "transferToBalance": "Transfer to balance",
+    "withdrawMoney": "Withdraw money"
+  }
+}
