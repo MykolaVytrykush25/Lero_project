@@ -9,10 +9,11 @@ import { useEffect, useState } from "react";
 import { useToast } from "@/components/ToastProvider";
 import { useTranslation } from "react-i18next";
 import Cookies from "js-cookie";
-import { FormControl, FormHelperText, TextField } from "@mui/material";
+import { FormControl, FormHelperText, TextField, Button, Divider } from "@mui/material";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { Google, GitHub } from '@mui/icons-material';
 
 //styles
 import styles from "./RegisterPage.module.scss";
@@ -37,9 +38,7 @@ const RegisterPage: NextPage = () => {
   const router = useRouter();
   const { t } = useTranslation("common");
   const { showToast } = useToast();
-
   const { isAuthenticated } = useSelector(userSelector);
-
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const schema = yup.object({
@@ -70,12 +69,15 @@ const RegisterPage: NextPage = () => {
     },
   });
 
-  useEffect(() => {
-    const refCode = Cookies.get("referral_code");
-    if (refCode) {
-      setValue("referral_link", refCode);
-    }
-  }, [setValue]);
+  const handleGoogleSignIn = () => {
+    // window.location.href = `${process.env.NEXT_PUBLIC_API_URL}/auth/google`;
+    router.push("/");
+  };
+
+  const handleGithubSignIn = () => {
+    // window.location.href = `${process.env.NEXT_PUBLIC_API_URL}/auth/github`;
+    router.push("/");
+  };
 
   const onSubmit = async (data: FormValues) => {
     setIsLoading(true);
@@ -90,6 +92,13 @@ const RegisterPage: NextPage = () => {
   };
 
   useEffect(() => {
+    const refCode = Cookies.get("referral_code");
+    if (refCode) {
+      setValue("referral_link", refCode);
+    }
+  }, [setValue]);
+
+  useEffect(() => {
     isAuthenticated && router.push("/");
   }, [isAuthenticated, router]);
 
@@ -99,6 +108,30 @@ const RegisterPage: NextPage = () => {
         <div className={styles.page__wrapper}>
           <h1>{t("base.register")}</h1>
           <form className={styles.page__main} onSubmit={handleSubmit(onSubmit)}>
+            <div className={styles.page__main__oauth}>
+              <Button
+                fullWidth
+                variant="outlined"
+                startIcon={<Google />}
+                onClick={handleGoogleSignIn}
+                className={styles.oauthButton}
+              >
+                Continue with Google
+              </Button>
+              
+              <Button
+                fullWidth
+                variant="outlined"
+                startIcon={<GitHub />}
+                onClick={handleGithubSignIn}
+                className={styles.oauthButton}
+              >
+                Continue with GitHub
+              </Button>
+
+              <Divider>or</Divider>
+            </div>
+
             <div className={styles.page__main__fields}>
               <FormControl fullWidth error={!!errors.username}>
                 <TextField

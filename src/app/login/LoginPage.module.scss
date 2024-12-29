@@ -1,53 +1,87 @@
 @import "@/scss/variables.scss";
-
-.page {
-  width: 100%;
-  height: 100%;
-  position: relative;
-
-  &__wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
+  .page {
     width: 100%;
-  }
+    height: 100%;
+    position: relative;
 
-  &__main {
-    max-width: 600px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-
-    &__fields {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      width: 100%;
-    }
-
-    &__submit {
+    &__wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 16px;
+      gap: 48px;
+      width: 100%;
+    }
 
-      &__forgot,
-      a {
-        cursor: pointer;
-        color: $primary;
-        text-decoration: underline;
-        transition: all 0.25s ease-in-out;
+    &__main {
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
 
-        &:hover {
-          color: $white;
+      &__fields {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+      }
+
+      &__submit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        &__forgot,
+        a {
+          cursor: pointer;
+          color: $primary;
+          text-decoration: underline;
+          transition: all 0.25s ease-in-out;
+
+          &:hover {
+            color: $white;
+          }
         }
       }
     }
+
+    &__oauth {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      margin-bottom: 1.5rem;
+
+      &__button {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        cursor: pointer;
+        background: white;
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: #f5f5f5;
+        }
+      }
+    }
+
+    &__divider {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      line-height: 0.1em;
+      margin: 20px 0;
+
+      span {
+        background: #fff;
+        padding: 0 10px;
+        color: #666;
+      }
+    }
   }
-}

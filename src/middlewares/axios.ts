@@ -5,6 +5,9 @@ const baseURL = "http://localhost:8000/api/v1";
 const instance = axios.create({
   baseURL: baseURL,
   withCredentials: true,
+  headers: {
+    'Content-Type': 'application/json'
+  }
 });
 
 instance.interceptors.response.use(

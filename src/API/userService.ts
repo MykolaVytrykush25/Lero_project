@@ -12,6 +12,7 @@ import {
 import { ImageTypes } from "@/@types/enums";
 
 export const registerUser = async (body: TRegisterData) => {
+  console.log(body);
   await axios.post("/users/register", body);
 };
 
